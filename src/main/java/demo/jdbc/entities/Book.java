@@ -9,7 +9,7 @@ public class Book {
     private LocalDate publicationDate;
     private int authorId;
     private Author author;
-
+// region constructor + Getters/Setters
     public Book(){}
 
     private Book(String isbn, String title, String description, LocalDate publicationDate) {
@@ -76,6 +76,10 @@ public class Book {
     public void setAuthor(Author author) {
         this.author = author;
     }
+
+
+//    endregion
+
 
     @Override
     public String toString() {
